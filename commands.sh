@@ -47,7 +47,9 @@ dnf install rpmfusion-nonfree-release-tainted -y
 dnf groupupdate core -y
 
 dnf check-update
-dnf install -y intel-gpu-tools powertop zsh mpv ffmpeg ffmpeg-libs remmina intel-media-driver libva libva-utils nodejs code gnome-power-manager util-linux-user acpica-tools sysfsutils iw
+dnf install -y intel-gpu-tools powertop zsh mpv ffmpeg ffmpeg-libs remmina intel-media-driver libva libva-utils nodejs code gnome-power-manager util-linux-user acpica-tools sysfsutils iw btrfs-progs
+gcc gcc-c++ glib glib-devel glibc glibc-devel glib2 glib2-devel libusb libusb-devel nss-devel pixman pixman-devel libX11 libX11-devel libXv libXv-devel gtk-doc libgusb libgusb-devel gobject-introspection gobject-introspection-devel cairo-devel ninja-build
+
 dnf install -y gstreamer1-plugins-{bad-\*,good-\*,base} gstreamer1-plugin-openh264 gstreamer1-libav --exclude=gstreamer1-plugins-bad-free-devel
 dnf install -y lame\* --exclude=lame-devel
 dnf group upgrade --with-optional Multimedia  -y
