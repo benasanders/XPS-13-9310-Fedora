@@ -122,5 +122,5 @@ https://github.com/rafaelmardojai/firefox-gnome-theme
 
 
 MOZ_LOG="PlatformDecoderModule:5" LIBVA_DRIVERS_PATH=/usr/lib/x86_64-linux-gnu/dri MOZ_ENABLE_WAYLAND=1 firefox
-
+ gsettings set org.gnome.desktop.remote-desktop.vnc encryption "['none']"
 
